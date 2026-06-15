@@ -9,3 +9,23 @@ def countdown(n):
     print(i)
   print("Liftoff!")
 countdown(5)
+#problem3
+the loop with break.
+Use if / elif / else for the three cases, and break to leave the loop once the player wins
+
+SECRET = 7
+
+def play_game():
+    guesses = 0
+
+    while True:
+        guess = int(input("Enter your guess: "))
+        if guess > SECRET:
+            print("Too high!")
+        elif guess < SECRET:
+            print("Too low!")
+        else:
+            print("Correct! You got it in", guesses, "tries.")
+            break
+
+play_game()
