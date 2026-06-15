@@ -10,9 +10,6 @@ def countdown(n):
   print("Liftoff!")
 countdown(5)
 #problem3
-the loop with break.
-Use if / elif / else for the three cases, and break to leave the loop once the player wins
-
 SECRET = 7
 
 def play_game():
