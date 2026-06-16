@@ -1,0 +1,29 @@
+def name():
+ a=input("enter a name-")
+ return(a)
+def city():
+ b=input("Enter a city-")
+ return(b)
+def language():
+ c=input("language-")
+ return(c)
+def main():
+  a=name()
+  b=city()
+  c=language()
+  print(f"{a}\n,{b}\n,{c}\n")
+main()
+#problem2
+def rectangle(l,b):
+    rarea=l*b
+    return(rarea)
+def circle(r):
+    carea=3.14*r*r
+    return(carea)
+def main():
+    a=rectangle(2,3)
+    b=circle(3)
+    print(a)
+    print(b)
+    
+main()
