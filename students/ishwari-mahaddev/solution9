@@ -27,3 +27,22 @@ def main():
     print(b)
     
 main()
+#problem3
+for x in range(3):
+ n=input("enter the name")
+ a=input("enter the mark")
+ b=input("enter the mark")
+ c=input("enter the mark")
+ t=a+b+c
+ av=t/3
+ print("name"+n)
+ print("marks:"+str(a)+","+str(b)+","+str(c))
+ print("total"+str(t)+"/300")
+ print("average"+str(round(av,2)))
+ if av<35:
+     print("Result:FAlL")
+ elif av>=75:
+     print("Result:pass(distinction)")
+ else:
+     print("Result:pass")
+ print("..............")
