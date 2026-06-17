@@ -24,8 +24,11 @@ def format(m1, m2,m3):
 #problem2
 def name(prompt):
     while True:
-     A=input(prompt)
-    if A=="":
-        print("empty")
-    else:
-        return 
+        A=input(prompt)
+        if A=="":
+           print("empty")
+        else:
+            print(A)
+            break
+        return
+name("Enter -")
