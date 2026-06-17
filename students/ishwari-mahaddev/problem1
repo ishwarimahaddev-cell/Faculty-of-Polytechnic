@@ -21,3 +21,11 @@ def grade(result):
           return("F")
 def format(m1, m2,m3):
     return("Marks: " + str(m1) + ", " + str(m2) + ", " + str(m3))
+#problem2
+def name(prompt):
+    while True:
+     A=input(prompt)
+    if A=="":
+        print("empty")
+    else:
+        return 
