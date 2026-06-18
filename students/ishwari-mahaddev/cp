@@ -1,1 +1,60 @@
+def average_of_three(m1,m2,m3):
+ result=(m1+m2+m3)/3
+ return(result)
+def classify_result(result):
+    if(result>=75):
+        return("destination")
+    elif(result>=35):
+         return("pass")
+    else:
+        return("fail")
+def grade(result):
+    if(result>=90):
+         return("A")
+    elif(result>=80):
+           return("B")
+    elif(result>=70):
+         return("C")
+    elif(result>=60):
+          return("D")
+    else: 
+          return("F")
+def format(m1, m2,m3):
+    return("Marks: " + str(m1) + ", " + str(m2) + ", " + str(m3))
+#problem2
+def name(prompt):
+    while True:
+        A=input(prompt)
+        if A=="":
+           print("empty")
+        else:
+            print(A)
+            break
+        return
+name("Enter -")
+#problem3
+max_sub = 5
 
+def collect_one_sub():
+    return input("Subject: ")
+
+def ask_yn(msg):
+    ans = input(msg + " (y/n): ")
+    return ans.lower() == "y"
+
+def collect_all_sub():
+    subs = []
+
+    ele = collect_one_sub()
+    subs.append(ele)
+
+    while len(subs) < max_sub:
+        if ask_yn("add another sub"):
+            ele = collect_one_sub()
+            subs.append(ele)
+        else:
+            break
+
+    return subs
+
+print(collect_all_sub())
